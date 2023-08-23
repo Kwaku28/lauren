@@ -7,7 +7,7 @@ const Profile = () => {
         React, Redux, and Ruby on Rails. This expertise enables me to create
         visually appealing and responsive web interfaces while also implementing
         robust back-end functionalities.
-        <br />
+        <br /><br />
         I excel at delivering comprehensive web solutions that cater to
         both user experience and business requirements. I am also passionate
         about cutting-edge, pixel-perfect, beatiful interfaces and intuitively
