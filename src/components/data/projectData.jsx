@@ -5,16 +5,16 @@ const projectData = [
     description: 'A Vite + React starter template.',
     image: 'https://raw.githubusercontent.com/vitejs/vite/main/assets/vite.png',
     url: 'https://vitejs.dev',
-    github: 'https://github/com',
+    github: 'https://github.com',
     date: '2021-01-01',
   },
   {
     id: 2,
-    title: 'Vite + React',
+    title: 'Vite',
     description: 'A Vite + React starter template.',
     image: 'https://raw.githubusercontent.com/vitejs/vite/main/assets/vite.png',
     url: 'https://vitejs.dev',
-    github: 'https://github/com',
+    github: 'https://github.com',
     date: '2021-01-01',
   },
   {
@@ -23,7 +23,7 @@ const projectData = [
     description: 'A Vite + React starter template.',
     image: 'https://raw.githubusercontent.com/vitejs/vite/main/assets/vite.png',
     url: 'https://vitejs.dev',
-    github: 'https://github/com',
+    github: 'https://github.com',
     date: '2021-01-01',
   },
 ];
