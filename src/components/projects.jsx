@@ -2,24 +2,18 @@ import PropTypes from "prop-types";
 
 const Project = ({ project }) => {
   return (
-    <div className="col-md-4">
-      <div className="card mb-4 shadow-sm">
-        <img
-          src={project.image}
-          className="card-img-top"
-          alt={project.title}
-          style={{ height: "225px" }}
-        />
-        <div className="card-body">
-          <h5 className="card-title">{project.title}</h5>
-          <p className="card-text">{project.description}</p>
+    <div className="">
+      <div className="">
+        <div className="">
+          <h5 className="">{project.title}</h5>
+          <p className="">{project.description}</p>
           <div className="d-flex justify-content-between align-items-center">
-            <div className="btn-group">
+            <div className="btn-group gap-4">
               <a
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-sm btn-outline-secondary"
+                className="btn btn-sm btn-dark"
               >
                 View
               </a>
@@ -27,12 +21,11 @@ const Project = ({ project }) => {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-sm btn-outline-secondary"
+                className="btn btn-sm btn-dark"
               >
                 Code
               </a>
             </div>
-            <small className="text-muted">{project.date}</small>
           </div>
         </div>
       </div>
