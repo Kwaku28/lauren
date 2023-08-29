@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Montserrat:wght@200;400&display=swap");
+
+.heading {
+  font-size: 6em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  color: #fff;
+}
+
+.profile {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 1.1em;
+  border-left: 2px solid #646cff;
+  padding-left: 1.5em;
+}

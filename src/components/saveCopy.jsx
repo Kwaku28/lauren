@@ -4,15 +4,13 @@ import Profile from "./components/profile";
 import Project from "./components/projects";
 import projectData from "./components/data/projectData";
 import "./styles/App.css";
-import "./styles/gradient.css"
 
 function App() {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(null);
   const [currentContent, setCurrentContent] = useState("profile");
-  const [activeGradients, setActiveGradients] = useState([]);
 
   // Function to handle toggling between Profile and projects
-  const toggleContent = (gradient) => {
+  const toggleContent = () => {
     if (currentContent === "profile") {
       if (currentProjectIndex !== null) {
         setCurrentContent("project");
@@ -20,38 +18,25 @@ function App() {
     } else {
       setCurrentContent("profile");
     }
-
-    toggleGradient(gradient);
   };
 
   // Function to handle toggling between project titles and details
-  const toggleProject = (index, gradient) => {
+  const toggleProject = (index) => {
     if (currentProjectIndex === index) {
       toggleContent();
     } else {
       setCurrentProjectIndex(index);
       setCurrentContent("project");
     }
-
-    toggleGradient(gradient);
   };
 
   const toggleToProfile = () => {
     setCurrentContent('profile');
   };
 
-  const toggleGradient = (gradient) => {
-    if (activeGradients.includes(gradient)) {
-      setActiveGradients(activeGradients.filter((g) => g !== gradient));
-    } else {
-      setActiveGradients([...activeGradients, gradient]);
-    }
-  };
-
   return (
     <>
-      <div className={`${activeGradients.includes('gradient1') ? 'gradient1' : ''} ${activeGradients.includes('gradient2') ? 'gradient2' : ''} ${activeGradients.includes('gradient3') ? 'gradient3' : ''} ${activeGradients.includes('gradient4') ? 'gradient4' : ''}`}>
-      <div className="hello">
+      <div className="top-border"></div>
       <Navigation toggleProfile={toggleToProfile} />
 
       <div className="container">
@@ -73,7 +58,7 @@ function App() {
               {projectData.map((project, index) => (
                 <li key={index}>
                   <button
-                    onClick={() => toggleProject(index, 'gradient4')}
+                    onClick={() => toggleProject(index)}
                     className={`project-btn ${
                       index === currentProjectIndex ? "" : ""
                     }`}
@@ -86,8 +71,6 @@ function App() {
             </ul>
           </div>
         </div>
-      </div>
-      </div>
       </div>
     </>
   );

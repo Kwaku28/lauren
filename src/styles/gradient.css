@@ -1,0 +1,133 @@
+.gradient1 {
+  position: relative;
+  padding-top: 2rem;
+  width: 95vw;
+  height: 100vh;
+  border-radius: 1.5rem;
+  overflow: hidden; /* Hide any overflow that might occur due to the border */
+}
+
+.gradient1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1.5rem solid transparent; /* Set the border to transparent */
+  border-image: linear-gradient(
+    45deg,
+    rgb(192, 182, 69) 0%,
+    rgb(220, 70, 131) 50%,
+    rgb(192, 182, 69) 100%
+  );
+  border-image-slice: 1;
+  border-image-width: 1.5rem; /* Set the border image width */
+  pointer-events: none; /* Allow interactions with elements underneath */
+  transition: all 500ms;
+}
+
+.gradient2 {
+  position: relative;
+  padding-top: 2rem;
+  width: 95vw;
+  height: 100vh;
+  border-radius: 1.5rem;
+  overflow: hidden; /* Hide any overflow that might occur due to the border */
+}
+
+.gradient2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1.5rem solid transparent; /* Set the border to transparent */
+  border-image: linear-gradient(
+    45deg,
+    rgb(190,112,197) 0%,
+    rgb(53,181,52) 50%,
+    rgb(190,112,197) 100%
+  );
+  border-image-slice: 1;
+  border-image-width: 1.5rem; /* Set the border image width */
+  pointer-events: none; /* Allow interactions with elements underneath */
+  transition: 500ms;
+}
+
+.gradient3 {
+  position: relative;
+  padding-top: 2rem;
+  width: 95vw;
+  height: 100vh;
+  border-radius: 1.5rem;
+  overflow: hidden; /* Hide any overflow that might occur due to the border */
+}
+
+.gradient3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1.5rem solid transparent; /* Set the border to transparent */
+  border-image: linear-gradient(
+    45deg,
+    rgb(170,126,77) 0%,
+    rgb(190,112,197) 50%,
+    rgb(170,126,77) 100%
+  );
+  border-image-slice: 1;
+  border-image-width: 1.5rem; /* Set the border image width */
+  pointer-events: none; /* Allow interactions with elements underneath */
+  transition: 500ms;
+}
+
+.gradient4 {
+  position: relative;
+  padding-top: 2rem;
+  width: 95vw;
+  height: 100vh;
+  border-radius: 1.5rem;
+  overflow: hidden; /* Hide any overflow that might occur due to the border */
+}
+
+.gradient4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1.5rem solid transparent; /* Set the border to transparent */
+  border-image: linear-gradient(
+    45deg,
+    rgb(68,76,175) 0%,
+    rgb(77,207,69) 50%,
+    rgb(68,76,175) 100%
+  );
+  border-image-slice: 1;
+  border-image-width: 1.2rem; /* Set the border image width */
+  pointer-events: none; /* Allow interactions with elements underneath */
+  transform: 500ms;
+}
+
+/* .gradient3 {
+  border-image: linear-gradient(
+    45deg,
+    rgb(170,126,77) 0%,
+    rgb(190,112,197) 50%,
+    rgb(170,126,77) 100%
+  );
+}
+
+.gradient4 {
+  border-image: linear-gradient(
+    45deg,
+    rgb(68,76,175) 0%,
+    rgb(77,207,69) 50%,
+    rgb(68,76,175) 100%
+  );
+} */
